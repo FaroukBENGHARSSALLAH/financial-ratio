@@ -10,8 +10,8 @@ Some implemeted APIs:
 - [x] Correlation ratio
 
 - Accounting ratios,
-- [x] AssetManagement ratio
-- [x] DebtManagement ratio
-- [x] Liquidity ratio
-- [x] MarketValue ratio
-- [x] Profitability ratio
+- [x] Asset Management ratios
+- [x] Debt Management ratios
+- [x] Liquidity ratios
+- [x] Market Value ratios
+- [x] Profitability ratios
