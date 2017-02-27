@@ -6,7 +6,7 @@ A module library that provides a set of APIs to calculate financial ratios.
 Some implemeted APIs: 
 
 - Security ratios, 
-- [x] beta ratio
+- [x] Beta ratio
 - [x] Correlation ratio
 - [x] Q ratio 
 
