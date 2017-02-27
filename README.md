@@ -8,7 +8,7 @@ Some implemeted APIs:
 - Security ratios, 
 - [x] beta ratio
 - [x] Correlation ratio
-- [x] Q ratio
+- [x] Q ratio 
 
 - Accounting ratios,
 - [x] Asset Management ratios
