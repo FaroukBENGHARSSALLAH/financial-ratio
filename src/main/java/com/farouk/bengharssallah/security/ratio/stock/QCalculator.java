@@ -1,4 +1,4 @@
-package com.farouk.bengharssallah.security.ratio.calculator;
+package com.farouk.bengharssallah.security.ratio.stock;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
