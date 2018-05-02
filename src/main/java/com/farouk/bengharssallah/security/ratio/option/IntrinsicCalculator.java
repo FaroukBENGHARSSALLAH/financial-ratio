@@ -3,7 +3,12 @@ package com.farouk.bengharssallah.security.ratio.option;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-                
+                    /*** <p> The intrinsic value is the actual value of an asset based on the 
+					* underlying perception of the true value including all aspects of the business; tangible and intangible factors</p>
+					* <p> In the call, intrinsic = Underlying Price – Strike Price. </p>
+					* <p> In the put,  intrinsic = Strike Price – Underlying Price. </p>
+					* <p> {@link IntrinsicCalculator } helps to calculate this value.</p>	
+					**/
 
 public class IntrinsicCalculator {
 	
