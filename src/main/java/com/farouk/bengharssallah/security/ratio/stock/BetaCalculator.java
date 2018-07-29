@@ -21,7 +21,7 @@ public class BetaCalculator {
 			     *<p> this method calculates the beta's security value.</p>
 			     *	@param valuesX   {@link  Array} of {@link Double } which contains the security 's values
 			     *	@param valuesY   {@link  Array} of {@link Double } which contains the benchmark 's values
-			     *  @return {@link double}
+			     *  @return {@link Double}
 			     **/
 	
 	public static double calculate(double[] security, double[]  benchmark){

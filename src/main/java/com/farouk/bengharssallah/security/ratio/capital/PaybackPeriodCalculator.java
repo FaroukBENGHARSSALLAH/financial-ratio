@@ -13,12 +13,20 @@ import java.math.RoundingMode;
 public class PaybackPeriodCalculator {
 	
 	
-		public static double calculate(double initailInverstment, double[] cashFlows){
+	           /**
+			     *<p> this method calculates the capital's payback period value.</p>
+			     *	@param initialInverstment {@link Double } which contains the capital's initial inverstment
+				 *	@param cashFlows {@link  Array} of {@link Double } which contains the capital's cash flows
+			     *  @return {@link Double}
+			     **/
+				 
+				 
+		public static double calculate(double initialInverstment, double[] cashFlows){
 		                       int index = 0;
 							   double result = 0;
-							   double value = initailInverstment;
+							   double value = initialInverstment;
 							   while(value > cashFlows[index]){
-								      value = initailInverstment - cashFlows[index];
+								      value = initialInverstment - cashFlows[index];
 								      index ++;
 									  result ++;
 							          }
