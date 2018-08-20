@@ -9,47 +9,53 @@ import java.math.RoundingMode;
 			  * <p> Assuming the costs of investment are equal among the various projects, 
 			  * the project with the highest IRR would probably be considered the best and be undertaken first </p>
               * <p> {@link IRRCalculator } helps to calculate this term.</p>
-			**/
+			  **/
                 
 
 public class IRRCalculator {
 	
 	
-	 /** 
-	  public static double getIRR(final double[] cashFlows)
-{
-final int MAX_ITER = 20;
-double EXCEL_EPSILON = 0.0000001;
-
-double x = 0.1;
-int iter = 0;
-while (iter++ < MAX_ITER) {
-
-final double x1 = 1.0 + x;
-double fx = 0.0;
-double dfx = 0.0;
-for (int i = 0; i < cashFlows.length; i++) {
-final double v = cashFlows[ i ];
-final double x1_i = Math.pow( x1, i );
-fx += v / x1_i;
-final double x1_i1 = x1_i * x1;
-dfx += -i * v / x1_i1;
-}
-final double new_x = x - fx / dfx;
-final double epsilon = Math.abs( new_x - x );
-
-if (epsilon <= EXCEL_EPSILON) {
-if (x == 0.0 && Math.abs( new_x ) <= EXCEL_EPSILON) {
-return 0.0; // OpenOffice calc does this
-}
-else {
-return new_x*100;
-}
-}
-x = new_x;
-}
-return x;
-}   **/
-	
+	           /**
+			     *<p> this method calculates the capital's Internal rate of return.</p>
+				 *	@param cashFlows {@link  Array} of {@link Double } which contains the capital's cash flows
+			     *  @return {@link Double}
+			     **/
+	 
+	  public static double calculate(final double[] cashFlows){
+           
+		    final int max_iteration = 20;
+            double defined_epsilon = 0.0000001;
+            double value = 0.1;
+            int iteration = 1;
 			
-                       }
+        while (iteration < max_iteration) {
+
+				final double added_value = 1.0 + value;
+				double portion = 0.0;
+				double portion_i = 0.0;
+				for (int i = 0; i < cashFlows.length; i++) {
+							final double cash_flow_i = cashFlows[i];
+							final double added_value_raised_by_power_i = Math.pow(added_value, i);
+							portion += cash_flow_i / added_value_raised_by_power_i;
+							final double added_value_raised_by_power_i_multiplied_by_added_value = added_value_raised_by_power_i * added_value;
+							portion_i += -i * cash_flow_i / added_value_raised_by_power_i_multiplied_by_added_value;
+				         }
+						 
+				final double adjusted_value = value - portion / portion_i;
+				final double epsilon = Math.abs(adjusted_value - value);
+
+				if (epsilon <= defined_epsilon) {
+						if (value == 0.0 && Math.abs(adjusted_value) <= defined_epsilon) {
+						               return 0.0; 
+						         }
+						else {
+						            return adjusted_value*100;
+						         }
+				           }
+				value = adjusted_value;
+				iteration++;
+				    }
+		return value;
+      }   
+			
+   }
