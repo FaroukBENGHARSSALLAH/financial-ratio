@@ -4,8 +4,10 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 
-                /*** <p></p>
-                * <p> {@link SpeculativePremiumCalculator } helps to calculate this term.</p>				*/
+                /***<p>Speculative premium is the difference between the current option price, 
+				  *  cost to buy the option and its intrinsic value. </p>
+                  * <p> {@link SpeculativePremiumCalculator } helps to calculate this term.</p>				
+				  **/
 
 
 public class SpeculativePremiumCalculator {
