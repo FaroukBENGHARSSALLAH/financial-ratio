@@ -1,11 +1,13 @@
-package com.farouk.bengharssallah.security.ratio.option;
+package com.farouk.bengharssallah.security.ratio.future;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-                    /***
-					* <p> {@link LeverageCalculator } helps to calculate this term.</p>
-					**/
+                    /**
+                     * <p>Futures are contracts obligating the buyer to purchase an asset or the seller
+                     *  to sell an asset, such as a  commodity or an instrument, at a predetermined future date and price ;<p>
+					 * <p> {@link LeverageCalculator } helps to calculate this term.</p>
+					 **/
 
 public class LeverageCalculator {
 	

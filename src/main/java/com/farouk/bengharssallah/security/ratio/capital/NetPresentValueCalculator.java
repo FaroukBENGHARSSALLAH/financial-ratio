@@ -26,7 +26,7 @@ public class NetPresentValueCalculator {
 			 public static double calculate(double discountRate, double[] cashFlows) { 
 							 double result = 0; 
 							 discountRate = discountRate + 1; 
-							 for (int i=0; i<cfs.length; i++) { 
+							 for (int i=0; i<cashFlows.length; i++) { 
 								result += cashFlows[i] / discountRate; 
 								discountRate *= discountRate; 
 								}  

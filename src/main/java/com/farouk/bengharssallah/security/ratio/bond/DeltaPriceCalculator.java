@@ -1,15 +1,16 @@
-package com.farouk.bengharssallah.security.ratio.stock;
+package com.farouk.bengharssallah.security.ratio.bond;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 /**
-             *<p></p>
-             * <p>{@link δPriceCalculator }  calculates this value.</p>
+             *<p><A bond is a a loan made by an investor to a borrower. A bond could be thought of paper
+             * between the lender and borrower that includes the details of the loan and its payments./p>
+             * <p>{@link DeltaPriceCalculator } calculates this value.</p>
              */
                 
 
-public class δPriceCalculator {
+public class DeltaPriceCalculator {
 	
 	
 			   /**

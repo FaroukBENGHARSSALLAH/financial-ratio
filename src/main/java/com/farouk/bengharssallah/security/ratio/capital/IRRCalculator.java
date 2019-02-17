@@ -33,6 +33,7 @@ public class IRRCalculator {
 				final double added_value = 1.0 + value;
 				double portion = 0.0;
 				double portion_i = 0.0;
+				
 				for (int i = 0; i < cashFlows.length; i++) {
 							final double cash_flow_i = cashFlows[i];
 							final double added_value_raised_by_power_i = Math.pow(added_value, i);

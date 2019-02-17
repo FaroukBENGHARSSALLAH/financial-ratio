@@ -22,7 +22,7 @@ public class IsInMoneyCalculator {
 			     **/
 				
 	public static boolean calculate(double intrinsicValue){
-					       return (getIntrinsicValue() > 0)
+					       return (intrinsicValue > 0);
                 }
 
    }

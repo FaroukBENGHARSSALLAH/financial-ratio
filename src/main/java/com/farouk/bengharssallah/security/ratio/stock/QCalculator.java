@@ -15,8 +15,6 @@ import java.math.RoundingMode;
 
 public class QCalculator {
 	
-	Equity Market Value / Equity Book Value
-				
 		          /**
 			     *<p> this method calculates the Q's security value.</p>
 			     *	@param equityMarketValue   {@link Double } the total market value of the firm
