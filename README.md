@@ -21,3 +21,13 @@ Some implemeted APIs:
 - [x] Liquidity ratios
 - [x] Market Value ratios
 - [x] Profitability ratios
+
+ You can use my API using this maven dependency : 
+ 
+        ```
+<dependency>
+    <groupId>com.github.faroukbengharssallah</groupId>
+    <artifactId>financial-ratio</artifactId>
+    <version>0</version>
+</dependency>
+```
