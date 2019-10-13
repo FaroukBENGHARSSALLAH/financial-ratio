@@ -31,3 +31,9 @@ Some implemeted APIs:
     <version>0</version>
 </dependency>
 ```
+- Financial data resources : JSon compressed files containing Yahoo financial instrutments data to be used in DEV environment 
+  Stock (Ticker, Name, Exchange, Category, Country),
+  ETF (Ticker, Name, Exchange),
+  Currency (Ticker, Name, Exchange),
+  Future (Ticker, Name, Exchange),
+  Index (Ticker, Name, Exchange)
